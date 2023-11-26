@@ -1,0 +1,56 @@
+
+
+.image {
+    display: block; 
+    width: 25.75rem; 
+    height: auto; 
+    margin: 0.625rem; 
+    margin-left: auto;
+    margin-right: 19rem;
+    margin-top: 3.125rem;
+    border-radius:4%;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem #6EA4BC;   
+}
+#marge{
+    margin-top: 3.375rem;
+ 
+}
+
+
+#DBKidsList{
+    position: absolute; 
+            top: 15.25rem; 
+            left: 0.625rem;
+    display:inline-block;
+    border:5px solid #83A2B6;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem #6EA4BC;
+        padding:1.25rem;
+    list-style-image: url(img/kid33.png);
+    list-style-position: inside;
+    margin-top: 15.25rem;
+    margin-right: 5rem;
+    border-style:inset;
+}
+ul .boy{
+    list-style-image: url(img/kid2.png);
+ 
+}
+
+ul li{
+    padding: 0.625rem;
+    margin: 1.25rem;
+    font-size: 150%;
+    color: rgba(38, 0, 45, 0.813);
+    font-family: sans-serif;
+    text-align: left;
+}
+
+.KidsList h1{
+    text-align: center;
+    color: #7BA4BB;
+    border: #6EA4BC solid;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem #6EA4BC;
+
+}
+  
+

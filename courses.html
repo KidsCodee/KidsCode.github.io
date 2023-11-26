@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Courses Page</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="HeadFooter.css">
+  	<script type = "text/javascript"  src = "theme.js" > </script>
+
+
+  <style>
+
+h1 {
+  color:gray;
+}
+
+#coImg{ width: 100%;
+    margin-top: -3rem;
+}
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.course {
+  width: 35%;
+  margin-bottom: 5%;
+  box-sizing: border-box;
+    border: 0.03125rem solid #8096a3;
+ border-radius: 0.1875rem;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem #6EA4BC;
+    background-color: #D3D3D3;
+
+  margin-right: 10%;
+   margin-left: 5%;
+}
+
+.stars{ 
+text-align: center;}
+
+.checked{
+color: orange;}
+
+#course1, #course2 {
+		margin-top: 20px;
+}
+
+.aligned {
+ max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.course h2 {
+  margin-top: 0;
+  background-color: #7AA3B9;
+
+}
+
+.course p {
+  margin-bottom: 10px;
+}
+
+.course-info {
+  display: none;
+   
+}
+
+.course:hover .course-info {
+  display: inline;
+}
+
+.course-info h3 {
+  margin-top: 0;
+}
+
+.course-info p {
+  margin-bottom: 10px;
+}
+
+  </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <img src="img/logo.png" alt="Kids Code Logo" id="logo">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="tutors.html">Tutors</a>
+            <a href="admin_dashboard.html">Admin Dashboard</a>
+            <a href="parent_dashboard.html">Parent Dashboard</a>
+        </nav>
+        <a href="index.html" accesskey="h"></a></li>
+            <a href="admin_dashboard.html" accesskey="a"></a></li>
+            <a href="parent_dashboard.html" accesskey="p"></a></li>
+            <a href="courses.html" accesskey="c"></a></li>
+            <a href="courses_enrolment.html" accesskey="e"></a></li>
+            <a href="course_evaluation.html" accesskey="v"></a></li>
+            <a href="tutors.html" accesskey="t"></a></li>
+            <a href="Addnew.html" accesskey="n"></a></li>
+        <div class="bread-crumbs">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            </ul>
+            
+            </div>
+    </header>
+<main>
+  <br>
+
+  <img id="coImg" src="img/thumbnail_Courses.jpg" alt="" >
+  <div class="course-container">
+    <div class="course" id="course1">
+     <div class="courseHeader">
+		<h2> Java 1</h2>
+       <div class= "stars">
+	   <span class="fa fa-star fa-2x checked"></span>
+	   	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x "></span>
+                         </div>
+		  </div>
+      <div class="course-info">
+ 
+          <p><img src="img/discreption.png" alt="" width= 30 height= 30>course description:</p> 
+          <div class="aligned"><p>Beginner-friendly Java course for kids. Dive into the world of Java and start coding!.</p></div>
+        
+        
+         <p><img src="img/Warning.png" alt="" width=25 height=25> No prerequisite</p>
+       
+ 
+         <p><img src="img/calendar.jpg" alt="" width=30 height=30 > day-time:  Sun: 3-7, MON, Thu: 6-7, Tue, Wend: 4-7  </p>    
+       
+         <p><img src="img/user.png" alt="" width=25 height=25 >current tutors: Ibrahim</p>
+        
+        
+         <p><img src="img/objectives.jpg" alt="" width=30 height=30>corse description:</p>
+          <div class="aligned"> <p > Equip beginners with the essential concepts of Java programming including variables, loops, and basic data structures </p></div>
+       
+      </div>
+    </div>
+	
+	
+   <div class="course" id="course2">
+          <div class="courseHeader">
+		<h2> Java 2</h2>
+       <div class= "stars">
+	   <span class="fa fa-star fa-2x checked"></span>
+	   	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x checked"></span>
+                         </div>
+		  </div>
+      <div class="course-info">
+ 
+          <p><img src="img/discreption.png" alt="" width= 30 height= 30>course description:</p> 
+          <div class="aligned"><p> Unleash Your Coding Skills" is designed for young programmers who have completed "Java 1," offering a deep dive into advanced data types, control structures, functions, object-oriented programming, and exception handling to elevate their Java expertise.</p></div>
+        
+        
+         <p><img src="img/Warning.png" alt="" width=25 height=25> prerequisite: Java 1</p>
+       
+ 
+         <p><img src="img/calendar.jpg" alt="" width=30 height=30 > day-time:  Sunday,8-10</p>    
+       
+         <p><img src="img/user.png" alt="" width=25 height=25 >current tutors: Sara</p>
+        
+        
+         <p><img src="img/objectives.jpg" alt="" width=30 height=30>corse description:</p>
+          <div class="aligned"> <p > Advance students' understanding of Java through topics like advanced data types, control structures, and introductory object-oriented programming.</p></div>
+       
+      </div>
+    </div>
+	
+	<div class="course" id="course3">
+       <div class="courseHeader">
+		<h2> HTML 1</h2>
+       <div class= "stars">
+	   <span class="fa fa-star fa-2x checked"></span>
+	   	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x "></span>
+                         </div>
+		  </div>
+      <div class="course-info">
+ 
+          <p><img src="img/discreption.png" alt="" width= 30 height= 30>course description:</p> 
+          <div class="aligned"><p>is the core language for building web pages. It uses tags to structure and format content, making it readable by web browsers.. </p></div>
+        
+        
+         <p><img src="img/Warning.png" alt="" width=25 height=25> No prerequisite</p>
+       
+ 
+         <p><img src="img/calendar.jpg" alt="" width=30 height=30 > day-time:  Sun, Mon:5-6 Tue:3-7, Thu, Fri, Sat: 4-5</p>    
+       
+         <p><img src="img/user.png" alt="" width=25 height=25 >current tutors: Jack</p>
+        
+        
+         <p><img src="img/objectives.jpg" alt="" width=30 height=30>corse description:</p>
+          <div class="aligned"> <p >Introduce the fundamentals of HTML, enabling students to create simple web pages with text, links, and images </p></div>
+       
+      </div>
+    </div>
+	
+	<div class="course" id="course4">
+     <div class="courseHeader">
+		<h2> HTML 2</h2>
+       <div class= "stars">
+	   <span class="fa fa-star fa-2x checked"></span>
+	   	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x "></span>
+	   <span class="fa fa-star fa-2x "></span>
+                         </div>
+		  </div>
+      <div class="course-info">
+ 
+        <p><img src="img/discreption.png" alt="" width= 30 height= 30>course description:</p> 
+          <div class="aligned"><p>Mastering Web Design" builds on the foundations set in our beginner course, offering young web developers an immersive experience in advanced layout techniques, interactive elements, and SEO best practices to create captivating and functional websites.</p></div>
+        
+        
+         <p><img src="img/Warning.png" alt="" width=25 height=25> prerequisite: HTML 1</p>
+       
+ 
+         <p><img src="img/calendar.jpg" alt="" width=30 height=30 > day-time:  Sunday,8-10</p>    
+       
+         <p><img src="img/user.png" alt="" width=25 height=25 >current tutors: Lina</p>
+        
+        
+         <p><img src="img/objectives.jpg" alt="" width=30 height=30>corse description:</p>
+          <div class="aligned"> <p >Develop advanced web design skills, focusing on layout techniques, interactive elements, and SEO fundamentals.</p></div>
+       
+      </div>
+    </div>
+	
+	
+	<div class="course" id="course5">
+          <div class="courseHeader">
+		<h2> Swift </h2>
+       <div class= "stars">
+	   <span class="fa fa-star fa-2x checked"></span>
+	   	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x checked"></span>
+                         </div>
+		  </div>
+      <div class="course-info">
+ 
+           <p><img src="img/discreption.png" alt="" width= 30 height= 30>course description:</p> 
+          <div class="aligned"><p>This course covers the basics of Swift</p></div>
+        
+        
+         <p><img src="img/Warning.png" alt="" width=25 height=25> No prerequisite</p>
+       
+ 
+         <p><img src="img/calendar.jpg" alt="" width=30 height=30 > day-time:  Sunday,8-10</p>    
+       
+         <p><img src="img/user.png" alt="" width=25 height=25 >current tutors: Sophia</p>
+        
+        
+         <p><img src="img/objectives.jpg" alt="" width=30 height=30>corse description:</p>
+          <div class="aligned"> <p > Provide a foundational understanding of Swift programming for iOS development, covering basic syntax and app-building essentials.</p></div>
+      </div>
+    </div>
+	
+	
+	<div class="course" id="course6">
+         <div class="courseHeader">
+		<h2> SQL </h2>
+       <div class= "stars">
+	   <span class="fa fa-star fa-2x checked"></span>
+	   	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x "></span>
+	   <span class="fa fa-star fa-2x "></span>
+                         </div>
+		  </div>
+      <div class="course-info">
+ 
+          <p><img src="img/discreption.png" alt="" width= 30 height= 30>course description:</p> 
+          <div class="aligned"><p>Understand databases and how to interact with them using SQL.</p></div>
+        
+        
+         <p><img src="img/Warning.png" alt="" width=25 height=25> No prerequisite</p>
+       
+ 
+         <p><img src="img/calendar.jpg" alt="" width=30 height=30 > day-time:  Sunday,8-10</p>    
+       
+         <p><img src="img/user.png" alt="" width=25 height=25 >current tutors: Kumar</p>
+        
+        
+         <p><img src="img/objectives.jpg" alt="" width=30 height=30>corse description:</p>
+          <div class="aligned"> <p >Impart the core skills needed to query and manipulate databases using SQL, including selecting, updating, and deleting data</p></div>
+       
+      </div>
+    </div>
+	
+	
+	
+	<div class="course" id="course7">
+          <div class="courseHeader">
+		<h2> CSS</h2>
+       <div class= "stars">
+	   <span class="fa fa-star fa-2x checked"></span>
+	   	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x checked"></span>
+                         </div>
+		  </div>
+      <div class="course-info">
+ 
+           <p><img src="img/discreption.png" alt="" width= 30 height= 30>course description:</p> 
+          <div class="aligned"><p>css is a web technology for styling HTML content, controlling its appearance and layout..</p></div>
+        
+        
+         <p><img src="img/Warning.png" alt="" width=25 height=25> prerequisite: HTML 1</p>
+       
+ 
+         <p><img src="img/calendar.jpg" alt="" width=30 height=30 > day-time:  Sunday,8-10</p>    
+       
+         <p><img src="img/user.png" alt="" width=25 height=25 >current tutors: Emma</p>
+        
+        
+         <p><img src="img/objectives.jpg" alt="" width=30 height=30>corse description:</p>
+          <div class="aligned"> <p >Teach the basics of styling web pages, covering essential CSS properties and layout techniques.</p></div>
+       
+      </div>
+    </div>
+	
+	
+	<div class="course" id="course8">
+        <div class="courseHeader">
+		<h2> Java script 1</h2>
+       <div class= "stars">
+	   <span class="fa fa-star fa-2x checked"></span>
+	   	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x "></span>
+	   <span class="fa fa-star fa-2x "></span>
+                         </div>
+		  </div>
+      <div class="course-info">
+ 
+           <p><img src="img/discreption.png" alt="" width= 30 height= 30>course description:</p> 
+          <div class="aligned"><p>Get to know the magic behind websites with our JavaScript course for kids.</p></div>
+        
+        
+         <p><img src="img/Warning.png" alt="" width=25 height=25> HTML 1</p>
+       
+ 
+         <p><img src="img/calendar.jpg" alt="" width=30 height=30 > day-time:  Sunday,8-10</p>    
+       
+         <p><img src="img/user.png" alt="" width=25 height=25 >current tutors: Henry</p>
+        
+        
+         <p><img src="img/objectives.jpg" alt="" width=30 height=30>corse description:</p>
+          <div class="aligned"> <p > Introduce the principles of client-side scripting for interactive and dynamic web pages using JavaScript</p></div>
+       
+      </div>
+    </div>
+	
+	
+	<div class="course" id="course9">
+       <div class="courseHeader">
+		<h2> Java script 2</h2>
+       <div class= "stars">
+	   <span class="fa fa-star fa-2x checked"></span>
+	   	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x checked"></span>
+	   <span class="fa fa-star fa-2x "></span>
+                         </div>
+		  </div>
+      <div class="course-info">
+ 
+          <p><img src="img/discreption.png" alt="" width= 30 height= 30>course description:</p> 
+          <div class="aligned"><p>learn more deeply about java script </p></div>
+        
+        
+         <p><img src="img/Warning.png" alt="" width=25 height=25> No prerequisite</p>
+       
+ 
+         <p><img src="img/calendar.jpg" alt="" width=30 height=30 > day-time:  Sun:3-5, Thu, Fri, Sat: 2-3</p>    
+       
+         <p><img src="img/user.png" alt="" width=25 height=25 >current tutors: Henry</p>
+        
+        
+         <p><img src="img/objectives.jpg" alt="" width=30 height=30>corse description:</p>
+          <div class="aligned"> <p >more complexed functions and dealing with diffrent data types </p></div>
+       
+      </div>
+    </div>
+	
+  </div>
+</main>
+  <footer>
+    <p>Contact Info: <a href="mailto:Kidscode@hotmail.com">Kidscode@hotmail.com</a>, +96650123456</p>
+    <p>©2023 Kids Code. All rights reserved.</p>
+</footer>
+</body>
+</html>

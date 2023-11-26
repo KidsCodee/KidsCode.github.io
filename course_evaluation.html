@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Evaluation</title>
+    <link rel="stylesheet" href="HeadFooter.css">
+		<script type = "text/javascript"  src = "theme.js" > </script>
+
+    <style>
+body {
+    font-family: sans-serif;
+    background-color: #EEEEEE;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    margin: 100px auto;
+}
+
+.course-image {
+    display: block;
+    max-width: 100%;
+}
+
+
+        .x-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        h1 {
+            color: #180c54;
+            font-size: 24px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #180c54;
+        }
+
+        select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Style for star ratings */
+.star-rating {
+    direction: rtl; /* Right-to-left to allow the stars to be filled from right to left */
+    font-size: 0;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    display: inline-block;
+    position: relative;
+    font-size: 32px;
+    color: #444;
+    cursor: pointer;
+}
+
+.star-rating label::before {
+    content: "★";
+    padding: 5px;
+    color: #d3d3d3; 
+}
+
+.star-rating label:hover::before,
+.star-rating label:hover ~ label::before,
+.star-rating input:checked ~ label::before {
+    color: #ffc700; 
+}
+
+        .feedback {
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #555;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+       
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="img/logo.png" alt="Kids Code Logo" id="logo">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="tutors.html">Tutors</a>
+            <a href="admin_dashboard.html">Admin Dashboard</a>
+            <a href="parent_dashboard.html">Parent Dashboard</a>
+        </nav>
+        <a href="index.html" accesskey="h"></a></li>
+            <a href="admin_dashboard.html" accesskey="a"></a></li>
+            <a href="parent_dashboard.html" accesskey="p"></a></li>
+            <a href="courses.html" accesskey="c"></a></li>
+            <a href="courses_enrolment.html" accesskey="e"></a></li>
+            <a href="course_evaluation.html" accesskey="v"></a></li>
+            <a href="tutors.html" accesskey="t"></a></li>
+            <a href="Addnew.html" accesskey="n"></a></li>
+        <div class="bread-crumbs">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="parent_dashboard.html">Parent</a></li>
+            <li><a href="course_evaluation.html">Course Evaluation</a></li>
+            </ul>
+            </div>
+
+    </header>
+    <main>
+    <img src="img/course_evaluation.jpeg" alt="Description of Image" width= "100%" >
+    <div class="container">
+        <span class="x-button" id="xButton">&#10006;</span>
+        <h1>Course Evaluation</h1>
+        <form>
+            <label for="course">Select a course:</label>
+            <select id="course" name="course" required>               
+                 <option value="courses">select course</option>
+                <option value="course1">JAVA 1</option>
+                <option value="course2">JAVA 2</option>
+                <option value="course3">SQL</option>
+                 <option value="course4">HTML1</option>
+                <option value="course5">HTML2</option>
+                <option value="course6">javaScript 1</option>
+                <option value="course7">javaScript 2</option>
+                <option value="course8">CSS</option>
+                <option value="course9">Swift</option>
+
+                
+
+
+
+            </select>
+
+            <label for="rating">Rate the course:</label>
+            <div class="form-group">
+                    <div class="star-rating">
+                        <input type="radio" id="star5" name="rating" value="5" />
+                        <label for="star5" title="5 stars"></label>
+                        <input type="radio" id="star4" name="rating" value="4" />
+                        <label for="star4" title="4 stars"></label>
+                        <input type="radio" id="star3" name="rating" value="3" />
+                        <label for="star3" title="3 stars"></label>
+                        <input type="radio" id="star2" name="rating" value="2" />
+                        <label for="star2" title="2 stars"></label>
+                        <input type="radio" id="star1" name="rating" value="1" />
+                        <label for="star1" title="1 star"></label>
+                    </div>
+                </div>
+
+
+            <label for="feedback">Write your feedback:</label>
+            <textarea id="feedback" name="feedback" rows="7" placeholder="Enter your feedback here"></textarea>
+
+            <div class="feedback">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</main>
+    <footer>
+        <p>Contact Info: <a href="mailto:Kidscode@hotmail.com">Kidscode@hotmail.com</a>, +96650123456</p>
+        <p>©2023 Kids Code. All rights reserved.</p>
+    </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var form = document.querySelector('form');
+        var courseSelect = document.getElementById('course');
+        var ratings = document.querySelectorAll('input[name="rating"]');
+        
+        form.addEventListener('submit', function(event) {
+            // Prevent the default form submission
+            event.preventDefault();
+            
+            // Get the selected course values
+            var selectedCourse = courseSelect.options[courseSelect.selectedIndex].text;
+            var selectedRating = null;
+            
+            // Get the selected rating value
+            for (var i = 0; i < ratings.length; i++) {
+                if (ratings[i].checked) {
+                    selectedRating = ratings[i].value;
+                    break;
+                }
+            }
+            
+            // Check if both a course and a rating have been selected
+            if (selectedCourse !== "select course" && selectedRating !== null) {
+                alert("Thank you for your feedback!\n Your rating for course " + selectedCourse + " is " + selectedRating);
+                
+                
+            } else {
+                // If not all fields were filled out, alert the user
+                alert("You must select a course and rate the course to submit!");
+            }
+        });
+    });
+</script>
+</body>
+</html>

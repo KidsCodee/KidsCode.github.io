@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add New Kid Page</title>
+  <link rel="stylesheet" href="HeadFooter.css">
+  	     <script type = "text/javascript"  src = "rr.js" ></script>
+	<script type = "text/javascript"  src = "theme.js" > </script>
+
+     
+	 <style>
+	 
+	 
+.AddForm {
+display: flex;
+	width: 34.375rem;
+  box-sizing: border-box;
+  border: 0.03125rem solid #8096a3;
+ border-radius: 0.1875rem;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem #6EA4BC;
+    background-color: #eeee; 
+  margin-top: 5.375rem;
+    margin-bottom: 3.375rem;
+margin-left:25rem;
+flex-wrap: wrap; 
+  justify-content: flex-start;
+  
+
+ }
+
+
+.AddForm h2 {
+  margin-top: 0;
+  background-color: #7AA3B9;
+  background-clip: content-box;
+  text-align: center;
+  width: 94.9%;
+
+}
+
+#coImg{ width: 100%;
+    margin-top: -3rem;
+}
+
+.AddForm .img {
+width: 5.1%;
+height: 100%;}
+
+
+
+
+
+.form{
+	 	  padding: 15px;
+	  padding-left: 25px;
+
+
+}
+
+
+
+.form p{
+	  text-align: center;
+	  color: gray;
+}
+	
+.align-right {
+	display:flex;
+  align-self:flex-end;
+  margin-bottom: 20px;
+    margin-left: 60px;
+
+}
+
+input {
+	margin-left:10px;
+    border: 2px solid black;
+	border-radius: 4px;
+}
+
+	 
+	 
+	 </style>
+
+ 
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="img/logo.png" alt="Kids Code Logo" id="logo">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="tutors.html">Tutors</a>
+            <a href="admin_dashboard.html">Admin Dashboard</a>
+            <a href="parent_dashboard.html">Parent Dashboard</a>
+        </nav>
+        <a href="index.html" accesskey="h"></a></li>
+            <a href="admin_dashboard.html" accesskey="a"></a></li>
+            <a href="parent_dashboard.html" accesskey="p"></a></li>
+            <a href="courses.html" accesskey="c"></a></li>
+            <a href="courses_enrolment.html" accesskey="e"></a></li>
+            <a href="course_evaluation.html" accesskey="v"></a></li>
+            <a href="tutors.html" accesskey="t"></a></li>
+            <a href="Addnew.html" accesskey="n"></a></li>
+        <div class="bread-crumbs">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="parent_dashboard.html">Parent</a></li>
+            <li><a href="Addnew.html">Add new kid</a></li>
+
+            </ul>
+            </div>
+
+    </header>
+    <main>
+	  <img id="coImg" src="img/addKid.png" alt="" >
+
+<div class="AddForm">
+<h2>Add New Kid</h2>
+<img src="img/xs.jpg" alt="" class="img" style="height: 1.688rem;">
+
+
+<form id="myform">
+<div class="form">
+  <label for="fname"> Name  </label>
+  <input type="text" id="fname" name="fname"><br><br>
+
+<label for="birthday">DOB  </label>
+  <input type="date" id="birthday" name="birthday"> <br><br>
+
+  
+    <label> Gender  </label>
+   <input type="radio" id="male" name="gender" value="Male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="Female">
+  <label for="female">Female</label><br>
+
+<hr>
+<p> Contact</p>
+ <label for="phone"> Phone  </label>
+  <input type="text" id="phone" name="phone"><br><br>
+   <label for="email"> Email  </label>
+  <input type="text" id="email" name="email"><br><br>
+<label for="myfile" style="color:Black; text-shadow: 2px 2px 4px gray;">Add photo</label><input type="file" id="myfile" name="myfile">
+
+
+</div>
+</form>
+
+
+<div class=align-right> <input type="submit" value="Add" onclick="func()">
+
+</div>
+</div>
+</main>
+<footer>
+    <p>Contact Info: <a href="mailto:Kidscode@hotmail.com">Kidscode@hotmail.com</a>, +96650123456</p>
+    <p>©2023 Kids Code. All rights reserved.</p>
+</footer>
+</body>
+</html>

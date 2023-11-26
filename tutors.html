@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tutors</title>
+    <link rel="stylesheet" href="HeadFooter.css">
+	<script type = "text/javascript"  src = "theme.js" > </script>
+
+
+    <style>
+
+      
+        .teacher-container {
+            width: 100%;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            white-space: nowrap; /* Prevent line breaks in containers */
+			text-align: center;
+        }
+
+        .teacher-container::-webkit-scrollbar {
+            width: 0;
+        }
+
+        .teacher-box {
+            width: 13.75rem;
+            height: 14.75rem;
+            margin: 0.625rem;
+            padding: 1.25rem;
+			color: #6b8492;
+            text-align: center; 
+            display: inline-block;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 0.625rem;
+			background-color: #f2f2f2;
+        }
+
+        .teacher-photo {
+            width: 9.375rem;
+            height: 9.375rem;
+            display: block;
+            margin: 0 auto; /* Center the image horizontally */
+            border-radius: 30%; /* Make the image circular */
+        }
+
+		
+    </style>
+</head>
+
+<body>
+ <header>
+        <nav class="navbar">
+            <img src="img/logo.png" alt="Kids Code Logo" id="logo" >
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="tutors.html">Tutors</a>
+            <a href="admin_dashboard.html">Admin Dashboard</a>
+            <a href="parent_dashboard.html">Parent Dashboard</a>
+        </nav>
+        <a href="index.html" accesskey="h"></a></li>
+            <a href="admin_dashboard.html" accesskey="a"></a></li>
+            <a href="parent_dashboard.html" accesskey="p"></a></li>
+            <a href="courses.html" accesskey="c"></a></li>
+            <a href="courses_enrolment.html" accesskey="e"></a></li>
+            <a href="course_evaluation.html" accesskey="v"></a></li>
+            <a href="tutors.html" accesskey="t"></a></li>
+            <a href="Addnew.html" accesskey="n"></a></li>
+        <div class="bread-crumbs">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tutors.html">Tutors</a></li>
+            </ul>
+            </div>
+    </header>
+    <main>
+ <img src="img/ourT.png" alt="OUR Tuoters" width=100%>
+<div style=" margin-top:  3rem; margin-left: 1rem ">
+    <label for="sort">Sort by:</label>
+    <select id="sort" onchange="sortTutors(this.value)">
+        <option value="asc">A-Z</option>
+        <option value="desc">Z-A</option>
+    </select>
+
+    <div class="teacher-container">
+        <div class="teacher-box">
+            <img src="img/toto3.png" alt="Teacher 1" class="teacher-photo">
+            <h2>T.Ibrahim</h2>
+            <h3>Teaching topic: Java1 </h3>
+        </div>
+
+        <div class="teacher-box">
+            <img src="img/toto2.png" alt="Teacher 2" class="teacher-photo">
+            <h2>T.Sara</h2>
+            <h3>Teaching topic: Java2 </h3>
+        </div>
+
+        <div class="teacher-box">
+            <img src="img/toto8.png" alt="Teacher 3" class="teacher-photo">
+            <h2>T.Jack</h2>
+            <h3>Teaching topic: HTML1</h3>
+        </div>
+
+        <div class="teacher-box">
+            <img src="img/toto7.png" alt="Teacher 4" class="teacher-photo">
+            <h2>T.Lina</h2>
+            <h3>Teaching topic: HTML2</h3>
+        </div>
+
+        <div class="teacher-box">
+            <img src="img/toto1.png" alt="Teacher 5" class="teacher-photo">
+            <h2>T.Sophia</h2>
+            <h3>Teaching topic: Swift</h3>
+        </div>
+
+        <div class="teacher-box">
+            <img src="img/toto9.png" alt="Teacher 6" class="teacher-photo">
+            <h2>T.Kumar</h2>
+            <h3>Teaching topic: SQL</h3>
+        </div>
+
+        <div class="teacher-box">
+            <img src="img/toto6.png" alt="Teacher 7" class="teacher-photo">
+            <h2>T.Emma</h2>
+            <h3>Subject: CSS</h3>
+        </div>
+
+        <div class="teacher-box">
+            <img src="img/toto10.png" alt="Teacher 8" class="teacher-photo">
+            <h2>T.Henry</h2>
+            <h3>Subject: JavaScript</h3>
+        </div>
+    </div>
+</main>
+	 <footer>
+        <p>Contact Info: <a href="mailto:Kidscode@hotmail.com">Kidscode@hotmail.com</a>, +96650123456</p>
+        <p>©2023 Kids Code. All rights reserved.</p>
+    </footer>
+	
+		
+<script>
+function sortTutors(order) {
+    const teacherContainer = document.querySelector('.teacher-container');
+    const teacherBoxes = Array.from(teacherContainer.getElementsByClassName('teacher-box'));
+
+    teacherBoxes.sort(function(a, b) {
+        const nameA = a.querySelector('h2').textContent.toUpperCase();
+        const nameB = b.querySelector('h2').textContent.toUpperCase();
+
+        let comparison = 0;
+        if (order === 'asc') {
+            comparison = nameA.localeCompare(nameB);
+        } else {
+            comparison = nameB.localeCompare(nameA);
+        }
+        return comparison;
+    });
+
+    teacherBoxes.forEach(box => {
+        teacherContainer.appendChild(box);
+    });
+}
+
+</script>
+
+</body>
+</html>

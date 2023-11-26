@@ -1,0 +1,87 @@
+
+
+#courses, #reviews {
+    width: 89.9%;
+    margin: 2em auto;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 0.3125rem;
+    margin-right: 3rem;
+}
+
+.vision-section{
+    display: flex;
+    align-items: center;
+    padding: 6.25rem;
+	padding-top: 0px;
+    background-image: "kk.png";
+    margin-bottom: -8.125rem;
+    margin-right: 5rem;
+    margin-left: 13.75rem;
+	margin-top: 0%;
+}
+
+.vision-image {
+    width: 73.375rem;
+    height: 35rem;
+    margin-right: -3.25rem;
+    margin-left: -19.875rem;
+    margin-bottom: -0.3125rem;
+    
+}
+
+.course-row, .review-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.625rem;
+    flex-wrap: wrap;
+    border-color: #DFE3E7;
+}
+
+.course {
+    width: calc(20% - 1.125rem);
+    margin: 0.5%;
+    border: 0.03125rem solid #8096a3;
+    padding: 1em;
+    border-radius: 0.1875rem;
+    transition: transform 0.3s;
+    margin-top: 1.875rem;
+    margin-left: 0.3125rem;
+    margin-right: 0.625rem;
+    width: 18.75rem;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem #6EA4BC;
+    background-color: #eeee;
+    color: #4B7182;
+}
+
+.course img {
+    width: 3.125rem;
+    height: 3.125rem;
+    display: block;
+    margin: 0 auto 0.625rem;
+}
+
+.review {
+    width: calc(35% - 1.25rem);
+    margin: 2%;
+    border: 0.0625rem solid #ddd;
+    padding: 1em;
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    max-height: 6.1875rem;
+    font-size: 0.80rem;
+    background-color: #DFE3E7;
+    color: #4B7182;
+}
+
+.review h3 {
+    display: flex;
+    align-items: center;
+    margin-top: -8px;
+}
+
+.review h3 img {
+    height: 50px;
+    width: 50px;
+}
+

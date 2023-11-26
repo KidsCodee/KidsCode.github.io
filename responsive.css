@@ -1,0 +1,329 @@
+@media screen and (max-width: 600px) {
+  #logo {
+    width: 4rem; /* Adjusted size */
+    height: 4rem; /* Adjusted size */
+    margin-top: 0; /* Adjusted margin */
+  }
+
+  header {
+    padding: 0.75em 0; /* Adjusted padding */
+    font-size: 0.9em; /* Adjusted font size */
+  }
+
+  .navbar {
+    padding: 0.75em 1%; /* Adjusted padding */
+    font-size: 14px; /* Adjusted font size */
+  }
+
+  .navbar a {
+    font-size: 20px; /* Adjusted font size */
+    padding: 3px 7px; /* Adjusted padding */
+  }
+
+  .navbar a:hover {
+    background-color: #e9f0ed; /* Keeping original style */
+  }
+
+  footer {
+    line-height: 2.5em; /* Adjusted line height */
+    font-size: 0.8em; /* Adjusted font size */
+  }
+
+  .bread-crumbs {
+    font-size: 0.5rem; /* Adjusted font size */
+  }
+
+  .bread-crumbs ul li a {
+    height: 1.25rem; /* Adjusted height */
+    padding: 0.75rem 0.5rem 0 1.5rem; /* Adjusted padding */
+    font-size: 0.5rem; /* Adjusted font size */
+  }
+
+  .bread-crumbs ul li a:after, .bread-crumbs ul li a:before {
+    border-top: 1rem solid transparent; /* Adjusted size */
+    border-bottom: 1rem solid transparent; /* Adjusted size */
+    border-left: 1rem solid; /* Adjusted size */
+  }
+
+  .bread-crumbs ul li:last-child a:after {
+    display: none;
+  }
+
+  .bread-crumbs ul li a:hover {
+    background: #333;
+    color: #fff;
+  }
+
+  .bread-crumbs ul li a:hover:after {
+    border-left-color: #333;
+  }
+
+  .vision-section {
+    padding: 2rem; /* Adjusted padding */
+    margin-bottom: 0; /* Adjusted margin */
+    margin-right: 1rem; /* Adjusted margin */
+    margin-left: 1rem; /* Adjusted margin */
+  }
+
+  .vision-image {
+    width: 100%; /* Adjusted width */
+    height: auto; /* Adjusted height */
+    margin: 0; /* Adjusted margin */
+  }
+
+  .course-row, .review-row {
+    margin-bottom: 0.5rem; /* Adjusted margin */
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .course, .review {
+    width: 100%; /* Adjusted width */
+    margin: 0.5rem 0; /* Adjusted margin */
+    padding: 0.75em; /* Adjusted padding */
+    box-shadow: 0.2rem 0.2rem 0.4rem #6EA4BC; /* Adjusted box shadow */
+  }
+
+  .course img, .review h3 img {
+    width: 2.5rem; /* Adjusted size */
+    height: 2.5rem; /* Adjusted size */
+  }
+
+  .review {
+    max-height: auto; /* Adjusted max height */
+    font-size: 0.75rem; /* Adjusted font size */
+  }
+
+
+  
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    #logo {
+      width: 5rem; /* Adjusted size */
+      height: 5rem; /* Adjusted size */
+      margin-top: 0; /* Adjusted margin */
+    }
+  
+    header {
+      padding: 0.8em 0; /* Adjusted padding */
+    }
+  
+    .navbar {
+      padding: 0.8em 1%; /* Adjusted padding */
+      font-size: 14px; /* Adjusted font size */
+    }
+  
+    .navbar a {
+      font-size: 24px; /* Adjusted font size */
+      padding: 4px 8px; /* Adjusted padding */
+    }
+  
+    footer {
+      line-height: 2.5em; /* Adjusted line height */
+      font-size: 0.85em; /* Adjusted font size */
+    }
+  
+    .bread-crumbs {
+      font-size: 0.6rem; /* Adjusted font size */
+    }
+  
+    .bread-crumbs ul li a {
+      height: 1.4rem; /* Adjusted height */
+      padding: 0.8rem 0.6rem 0 1.6rem; /* Adjusted padding */
+      font-size: 0.6rem; /* Adjusted font size */
+    }
+  
+    .bread-crumbs ul li a:after, .bread-crumbs ul li a:before {
+      border-top: 1.1rem solid transparent; /* Adjusted size */
+      border-bottom: 1.1rem solid transparent; /* Adjusted size */
+      border-left: 1.1rem solid; /* Adjusted size */
+    }
+  
+    .vision-section {
+      padding: 4rem; /* Adjusted padding */
+      margin: 1rem; /* Adjusted margin */
+    }
+  
+    .vision-image {
+      width: 90%; /* Adjusted width */
+      height: auto; /* Adjusted height */
+      margin: 0 auto; /* Centered */
+    }
+  
+    .course-row, .review-row {
+      justify-content: center; /* Center items */
+    }
+  
+    .course, .review {
+      width: calc(50% - 1rem); /* Adjusted width */
+      margin: 0.5rem; /* Adjusted margin */
+      box-shadow: 0.25rem 0.25rem 0.5rem #6EA4BC; /* Adjusted box shadow */
+    }
+  
+    .course img, .review h3 img {
+      width: 2.5rem; /* Adjusted size */
+      height: 2.5rem; /* Adjusted size */
+    }
+  
+    .review {
+      font-size: 0.75rem; /* Adjusted font size */
+      max-height: auto; /* Adjusted max height */
+    }
+  }
+  @media only screen and (min-width: 1025px) {
+    #logo {
+      width: 7rem; /* Slightly larger for bigger screens */
+      height: 7rem;
+      margin-top: 0; /* Adjusted margin */
+    }
+  
+    header {
+      padding: 1.2em 0; /* Increased padding */
+      font-size: 1.1em; /* Increased font size for better readability */
+    }
+  
+    .navbar {
+      padding: 1.2em 2%; /* Increased padding */
+      font-size: 16px; /* Increased font size */
+    }
+  
+    .navbar a {
+      font-size: 30px; /* Increased font size */
+      padding: 8px 15px; /* Adjusted padding for better spacing */
+    }
+  
+    footer {
+      line-height: 3.5em; /* Adjusted line height */
+      font-size: 1em; /* Adjusted font size */
+    }
+  
+    .bread-crumbs {
+      font-size: 0.7rem; /* Increased font size */
+    }
+  
+    .bread-crumbs ul li a {
+      height: 1.75rem; /* Increased height */
+      padding: 1.2rem 0.75rem 0 2rem; /* Adjusted padding */
+      font-size: 0.7rem; /* Increased font size */
+    }
+  
+    .bread-crumbs ul li a:after, .bread-crumbs ul li a:before {
+      border-top: 1.5rem solid transparent; /* Adjusted size */
+      border-bottom: 1.5rem solid transparent; /* Adjusted size */
+      border-left: 1.5rem solid; /* Adjusted size */
+    }
+  
+    .vision-section {
+      padding: 7rem; /* Increased padding */
+      margin-bottom: 0; /* Adjusted margin */
+      margin-right: 2rem; /* Adjusted margin */
+      margin-left: 2rem; /* Adjusted margin */
+    }
+  
+    .vision-image {
+      width: auto; /* Adjusted width */
+      height: auto; /* Adjusted height */
+      margin: 0; /* Adjusted margin */
+    }
+  
+    .course-row, .review-row {
+      justify-content: space-between; /* Maintain original styling */
+      margin-bottom: 1rem; /* Increased margin */
+    }
+  
+    .course, .review {
+      width: calc(25% - 1rem); /* Adjusted width for 4 items in a row */
+      margin: 1rem; /* Increased margin */
+      padding: 1.2em; /* Increased padding */
+      box-shadow: 0.4rem 0.4rem 0.8rem #6EA4BC; /* Adjusted box shadow */
+    }
+  
+    .course img, .review h3 img {
+      width: 3.5rem; /* Increased size */
+      height: 3.5rem; /* Increased size */
+    }
+  
+    .review {
+      font-size: 0.9rem; /* Increased font size */
+      max-height: auto; /* Adjusted max height */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    #logo {
+      width: 5rem; /* Logo size adjusted for smaller screens */
+      height: 5rem;
+      margin-top: 0; /* Removed negative margin for better alignment */
+    }
+  
+    header {
+      padding: 0.8em 0; /* Reduced padding for smaller header size */
+      font-size: 0.9em; /* Slightly reduced font size for better fit */
+    }
+  
+    .navbar {
+      padding: 0.8em 1%; /* Consistent padding for navigation bar */
+      font-size: 14px; /* Suitable font size for readability */
+      flex-direction: column; /* Navbar items stacked vertically */
+      align-items: flex-start; /* Alignment adjusted for vertical stacking */
+    }
+  
+    .navbar a {
+      font-size: 24px; /* Font size optimized for touch interfaces */
+      padding: 4px 8px; /* Padding adjusted for touch targets */
+      margin-top: 0.5em; /* Margin added between navbar items */
+    }
+  
+    footer {
+      line-height: 2.5em; /* Line height increased for better separation */
+      font-size: 0.85em; /* Font size adjusted for footer content */
+    }
+  
+    .bread-crumbs {
+      font-size: 0.6rem; /* Reduced font size for breadcrumb links */
+    }
+  
+    .bread-crumbs ul li a {
+      height: 1.4rem; /* Height adjusted for breadcrumb items */
+      padding: 0.8rem 0.6rem 0 1.6rem; /* Padding optimized for spacing */
+      font-size: 0.6rem; /* Font size reduced for breadcrumb links */
+    }
+  
+    .bread-crumbs ul li a:after, .bread-crumbs ul li a:before {
+      border-top: 1.1rem solid transparent; /* Borders adjusted for breadcrumb arrows */
+      border-bottom: 1.1rem solid transparent;
+      border-left: 1.1rem solid; /* Arrow size proportional to breadcrumbs */
+    }
+  
+    .vision-section {
+      padding: 4rem; /* Padding adjusted for the vision section */
+      margin: 1rem; /* Margins set for consistent spacing */
+      flex-direction: column; /* Vertical stacking for content sections */
+    }
+  
+    .vision-image {
+      width: 100%; /* Full width for vision image */
+      height: auto; /* Height auto for maintaining aspect ratio */
+      margin: 0; /* Margin reset for alignment */
+    }
+  
+    .course-row, .review-row {
+      margin-bottom: 0.5rem; /* Margin adjusted for course and review rows */
+    }
+  
+    .course, .review {
+      width: 100%; /* Full width utilization for courses and reviews */
+      margin: 0.5rem 0; /* Margin adjusted for vertical spacing */
+      padding: 0.75em; /* Padding for content within cards */
+      box-shadow: 0.25rem 0.25rem 0.5rem #6EA4BC; /* Box shadow for depth effect */
+    }
+  
+    .course img, .review h3 img {
+      width: 2.5rem; /* Image sizes adjusted for consistency */
+      height: 2.5rem;
+    }
+  
+    .review {
+      font-size: 0.75rem; /* Font size optimized for review text */
+      max-height: auto; /* Max height adjusted for variable content */
+    }
+  }
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Course Enrollment</title>
+    <link rel="stylesheet" href="HeadFooter.css">
+<script type = "text/javascript"  src = "rr.js" > </script>
+	<script type = "text/javascript"  src = "theme.js" > </script>
+
+
+    <style>
+        body {
+            font-family:  sans-serif;
+            background-color: #EEEEEE;
+
+        }
+       
+    .container {
+           
+    margin: auto;
+    padding: 20px;
+}
+
+
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-family: sans-serif;
+        color: #333;
+        }
+
+        .kids {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            
+        }
+
+        .kids select {
+            width: 20%; 
+            padding: 1px;
+        }
+
+        .kids label,
+        .kids select {
+            margin-bottom: 15px; 
+        }
+
+        .courses {
+            display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.course {
+    width: 45%; 
+    margin-bottom: 13px;
+    border: 0.1px solid #898484;  
+    background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            position: relative; 
+         
+}
+.course label {
+    display: block;         
+    text-align: center;      
+    font-size: 24px;
+ margin-bottom: 10px;
+}
+
+        .enrollment-btn {
+            display: block;
+            width: 150px;
+            padding: 10px;
+            margin: 20px auto;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        .enrollment-btn:hover {
+            background-color: #555;
+        }
+        .course img {
+    display: block;         
+    width: 20%;             
+    height: auto;           
+    margin: 10px ;    
+    border: 0,1px solid #9b9898; 
+    padding: 10px;         
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+    </style>
+</head>
+
+    
+<body onload="toChildrenList()">
+    <header>
+        <nav class="navbar">
+            <img src="img/logo.png" alt="Kids Code Logo" id="logo">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="tutors.html">Tutors</a>
+            <a href="admin_dashboard.html">Admin Dashboard</a>
+            <a href="parent_dashboard.html">Parent Dashboard</a>
+        </nav>
+        <a href="index.html" accesskey="h"></a></li>
+            <a href="admin_dashboard.html" accesskey="a"></a></li>
+            <a href="parent_dashboard.html" accesskey="p"></a></li>
+            <a href="courses.html" accesskey="c"></a></li>
+            <a href="courses_enrolment.html" accesskey="e"></a></li>
+            <a href="course_evaluation.html" accesskey="v"></a></li>
+            <a href="tutors.html" accesskey="t"></a></li>
+            <a href="Addnew.html" accesskey="n"></a></li>
+        <div class="bread-crumbs">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="parent_dashboard.html">Parent</a></li>
+            <li><a href="courses_enrolment.html">course Enrollment</a></li>
+            </ul>
+            </div>
+
+    </header>
+    <main>
+    <img src="img/course_enrollment.jpg" alt="Description of Image" width= "100%" >
+
+    <div class="container">
+  
+        <section class="kids">
+            <label for="kid">Choose Kid:</label>
+            <select id="kid">
+               <option> </option>
+
+
+
+            </select>
+            
+
+          <label for="prerequisites">Choose course based on:</label>
+<select id="prerequisites" onchange="filterCourses()"></select>
+
+<label for="currentTutor">Choose tutor:</label>
+<select id="currentTutor" onchange="filterCourses()"></select>
+
+         </section>
+
+        <section class="courses">
+            <div class="course" data-prerequisite="null" data-tutor="T.Ibrahim">
+                <input type="checkbox" id="course1">
+                <label for="course1">JAVA 1</label>
+                <img src="img/java.png" alt="java logo">
+            </div>
+            <div class="course" data-prerequisite="java1" data-tutor="T.Sara">
+                <input type="checkbox" id="course2">
+                <label for="course2">JAVA 2</label>
+                <img src="img/java.png" alt="java logo">
+            </div>
+            <div class="course" data-prerequisite="null" data-tutor="T.Jack">
+                <input type="checkbox" id="course3">
+                <label for="course3">HTML 1 </label>
+                    <img src="img/HTML2.logo.png" alt="HTML logo">
+                </div>
+  
+            <div class="course" data-prerequisite="HTML 1" data-tutor="T.Lina">
+                <input type="checkbox" id="course3">
+                <label for="course3">HTML 2 </label>
+                    <img src="img/HTML2.logo.png" alt="HTML logo">
+                
+            </div>
+            
+            <div class="course" data-prerequisite="JAVA 2" data-tutor="T.Henry">
+                <input type="checkbox" id="course5">
+                <label for="course5">javascript 1</label>
+                <img src="img/javascript.png" alt="javascript logo">
+
+            </div> <div class="course" data-prerequisite="JavaScript 1" data-tutor="T.Henry">
+                <input type="checkbox" id="course5">
+                <label for="course5">javascript 2</label>
+                <img src="img/javascript.png" alt="javascript logo">
+
+            </div>
+			<div class="course" data-prerequisite="HTML 2" data-tutor="T.Emma">
+                <input type="checkbox" id="course4">
+                <label for="course4">CSS</label>
+                <img src="img/CSS_logo.png" alt="CSS logo">
+
+            </div>
+            <div class="course" data-prerequisite="JAVA 2" data-tutor="T.Sophia">
+                <input type="checkbox" id="course6">
+                <label for="course6">Swift</label>
+                <img src="img/swift.png" alt="swift logo">
+
+            </div>
+            <div class="course" data-prerequisite="null" data-tutor="T.Kumar">
+                <input type="checkbox" id="course7">
+                <label for="course7">SQL</label>
+                <img src="img/sql.logo.png" alt="sql logo">
+
+			</div>
+        </section>
+
+        <button class="enrollment-btn">Enrollment</button>
+    </div>
+    </main>
+    <footer>
+        <p>Contact Info: <a href="mailto:Kidscode@hotmail.com">Kidscode@hotmail.com</a>, +96650123456</p>
+        <p>©2023 Kids Code. All rights reserved.</p>
+    </footer>
+	
+
+  
+
+<script> populateFilterOptions();
+
+// to handle Enrollment 
+function handleEnrollment() {
+    // Get selected child and courses
+    const selectedChild = document.getElementById('kid').value;
+    const selectedCourses = document.querySelectorAll('.course input:checked');
+    
+   
+    if (!selectedChild) {
+        alert('Please select a child.');
+        return;
+    }
+    
+   
+    if (selectedCourses.length === 0) {
+        alert('Please select at least one course.');
+        return;
+    }
+    
+    //  enrollment information
+    const enrollmentInfo = document.createElement('div');
+    enrollmentInfo.classList.add('enrollment-info');
+    enrollmentInfo.innerHTML = `<h3>${selectedChild}</h3><p>Courses:</p>`;
+    
+    selectedCourses.forEach(course => {
+        const courseName = course.parentElement.querySelector('label').textContent;
+        const tutor = course.parentElement.getAttribute('data-tutor');
+        enrollmentInfo.innerHTML += `<p>${courseName} - Tutor: ${tutor}</p>`;
+    });
+    
+    // remove information
+    const existingInfo = document.querySelector('.enrollment-info');
+    if (existingInfo) {
+        existingInfo.remove();
+    }
+    
+    // Display the new information
+    const container = document.querySelector('.container');
+    container.appendChild(enrollmentInfo);
+    
+    // Clear the form
+    document.getElementById('kid').value = '';
+    selectedCourses.forEach(course => {
+        course.checked = false;
+    });
+    
+    // Reset filter options
+    const prerequisitesSelect = document.getElementById('prerequisites');
+    const tutorsSelect = document.getElementById('currentTutor');
+    prerequisitesSelect.value = 'choose-prerequisite';
+    tutorsSelect.value = 'current-Tutor';
+	filterCourses()
+}
+
+// Add event listener to the button
+const enrollmentBtn = document.querySelector('.enrollment-btn');
+enrollmentBtn.addEventListener('click', handleEnrollment);
+
+</script>
+
+	
+	
+	
+</body>
+</html>
